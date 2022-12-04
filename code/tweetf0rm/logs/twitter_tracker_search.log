@@ -1,0 +1,2024 @@
+(2022-07-19 02:51:16,664) [10548] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 02:51:16,665) [10548] INFO: REQUEST -> (md5(querystring): [5e511dda01bc2af0413a33470310d671]; since_id: [945397488873328640]; geocode: [None])
+(2022-07-19 02:53:08,458) [10548] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 03:09:01,943) [12652] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 03:09:01,944) [12652] INFO: REQUEST -> (md5(querystring): [5e511dda01bc2af0413a33470310d671]; since_id: [945397488873328640]; geocode: [None])
+(2022-07-19 03:09:18,500) [12652] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 03:10:31,175) [12064] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 03:10:31,176) [12064] INFO: REQUEST -> (md5(querystring): [5e511dda01bc2af0413a33470310d671]; since_id: [945397488873328640]; geocode: [None])
+(2022-07-19 03:11:16,257) [12064] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 03:21:28,838) [15404] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 03:21:28,841) [15404] INFO: REQUEST -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [0]; geocode: [None])
+(2022-07-19 03:21:53,023) [15404] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 22:58:02,079) [13952] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 22:58:02,088) [13952] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 22:58:23,114) [13952] ERROR: Unable to obtain OAuth 2 access token.
+(2022-07-19 22:58:23,202) [13952] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000001855072AB30>, 'Connection to api.twitter.com timed out. (connect timeout=None)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /oauth2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001855072AB30>, 'Connection to api.twitter.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /oauth2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001855072AB30>, 'Connection to api.twitter.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-07-19 22:58:23,205) [13952] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 22:58:23,206) [13952] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 22:58:28,208) [13952] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 22:58:49,212) [13952] ERROR: Unable to obtain OAuth 2 access token.
+(2022-07-19 22:58:49,213) [13952] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000001855072BDF0>, 'Connection to api.twitter.com timed out. (connect timeout=None)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /oauth2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001855072BDF0>, 'Connection to api.twitter.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /oauth2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001855072BDF0>, 'Connection to api.twitter.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-07-19 22:58:49,215) [13952] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 22:58:49,215) [13952] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 22:58:54,217) [13952] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 22:59:15,223) [13952] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 22:59:56,603) [2860] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 22:59:56,609) [2860] INFO: REQUEST -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [0]; geocode: [None])
+(2022-07-19 23:00:17,626) [2860] ERROR: Unable to obtain OAuth 2 access token.
+(2022-07-19 23:00:17,629) [2860] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000001C8E8B7AB60>, 'Connection to api.twitter.com timed out. (connect timeout=None)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /oauth2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C8E8B7AB60>, 'Connection to api.twitter.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /oauth2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C8E8B7AB60>, 'Connection to api.twitter.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-07-19 23:00:17,631) [2860] INFO: COMPLETED -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [0]; geocode: [None])
+(2022-07-19 23:00:17,632) [2860] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:00:22,632) [2860] INFO: REQUEST -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [0]; geocode: [None])
+(2022-07-19 23:00:43,637) [2860] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 23:03:47,372) [13620] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:03:47,382) [13620] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 23:04:08,402) [13620] ERROR: Unable to obtain OAuth 2 access token.
+(2022-07-19 23:04:08,405) [13620] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000020AA53EAB30>, 'Connection to api.twitter.com timed out. (connect timeout=None)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /oauth2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000020AA53EAB30>, 'Connection to api.twitter.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /oauth2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000020AA53EAB30>, 'Connection to api.twitter.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-07-19 23:04:08,407) [13620] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 23:04:08,407) [13620] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:04:13,409) [13620] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 23:04:34,415) [13620] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 23:06:40,043) [5172] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:06:40,049) [5172] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 23:07:01,067) [5172] ERROR: Unable to obtain OAuth 2 access token.
+(2022-07-19 23:07:01,081) [5172] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000025CA040AB30>, 'Connection to api.twitter.com timed out. (connect timeout=None)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /oauth2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000025CA040AB30>, 'Connection to api.twitter.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /oauth2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000025CA040AB30>, 'Connection to api.twitter.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-07-19 23:07:01,087) [5172] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 23:07:01,089) [5172] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:07:06,089) [5172] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 23:08:05,815) [27232] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:08:05,817) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 23:09:06,806) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549460714590552065]; geocode: [None])
+(2022-07-19 23:09:06,807) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:09:11,807) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549460714590552065]; geocode: [None])
+(2022-07-19 23:09:14,042) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:14,043) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:09:19,043) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:19,927) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:19,927) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:09:24,927) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:25,893) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:25,894) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:09:30,896) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:31,810) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:31,810) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:09:36,812) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:37,678) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:37,678) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:09:42,679) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:43,563) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:43,563) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:09:48,565) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:49,574) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:49,575) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:09:54,577) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:55,520) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:09:55,520) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:10:00,521) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:01,461) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:01,461) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:10:06,463) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:07,345) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:07,345) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:10:12,346) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:13,376) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:13,377) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:10:18,377) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:19,253) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:19,253) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:10:24,254) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:25,110) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:25,111) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:10:30,112) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:31,034) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:31,034) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:10:36,035) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:36,915) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:36,916) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:10:41,916) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:42,788) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:42,788) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:10:47,789) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:48,655) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:48,656) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:10:53,657) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:54,543) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:10:54,543) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:10:59,543) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:00,430) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:00,430) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:11:05,432) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:06,339) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:06,339) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:11:11,340) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:14,060) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:14,061) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:11:19,062) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:19,953) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:19,953) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:11:24,954) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:25,906) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:25,906) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:11:30,906) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:31,771) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:31,772) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:11:36,773) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:37,649) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:37,649) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:11:42,651) [27232] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:43,513) [27232] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:11:43,515) [27232] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:11:48,237) [27232] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 23:15:26,767) [27164] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:15:26,772) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549463784129003520]; geocode: [None])
+(2022-07-19 23:15:28,992) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:28,993) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:29,993) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:31,014) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:31,021) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:32,023) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:32,926) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:32,927) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:33,928) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:34,815) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:34,816) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:35,817) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:36,808) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:36,808) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:37,809) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:38,679) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:38,681) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:39,682) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:40,552) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:40,553) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:41,554) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:42,444) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:42,446) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:43,447) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:44,324) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:44,324) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:45,325) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:46,225) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:46,225) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:47,227) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:48,109) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:48,109) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:49,110) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:50,012) [27164] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:50,012) [27164] INFO: PAUSE 1s to CONTINUE...
+(2022-07-19 23:15:51,013) [27164] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:15:51,427) [27164] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 23:16:15,768) [13468] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:16:15,773) [13468] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:16,815) [13468] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:16,816) [13468] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:16:21,816) [13468] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:22,810) [13468] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:22,810) [13468] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:16:27,811) [13468] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:28,819) [13468] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:28,820) [13468] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:16:33,821) [13468] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:34,822) [13468] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:34,823) [13468] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:16:39,823) [13468] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:40,713) [13468] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:40,713) [13468] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:16:45,715) [13468] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:46,714) [13468] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:46,714) [13468] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:16:51,715) [13468] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:52,784) [13468] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:16:52,784) [13468] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:16:55,140) [13468] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 23:20:31,269) [13400] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:20:31,271) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:20:32,201) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:20:32,202) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:20:37,203) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:20:38,254) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:20:38,254) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:20:43,255) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:20:44,126) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:20:44,127) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:20:49,127) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:20:50,023) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:20:50,024) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:20:55,024) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:20:56,393) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:20:56,393) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:21:01,394) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:02,431) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:02,432) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:21:07,432) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:08,436) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:08,437) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:21:13,438) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:15,482) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:15,482) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:21:20,484) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:21,428) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:21,429) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:21:26,430) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:27,441) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:27,441) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:21:32,442) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:33,368) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:33,369) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:21:38,371) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:39,374) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:39,375) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:21:44,375) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:45,466) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:45,468) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:21:50,470) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:51,549) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:51,549) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:21:56,549) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:57,440) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:21:57,440) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:22:02,441) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:03,422) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:03,424) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:22:08,425) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:09,366) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:09,366) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:22:14,368) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:15,266) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:15,267) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:22:20,267) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:21,157) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:21,158) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:22:26,159) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:27,170) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:27,170) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:22:32,171) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:33,163) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:33,163) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:22:38,164) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:39,075) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:39,076) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:22:44,077) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:45,062) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:45,062) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:22:50,063) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:51,852) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:51,853) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:22:56,854) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:57,778) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:22:57,778) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:23:02,779) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:03,672) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:03,672) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:23:08,673) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:09,549) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:09,549) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:23:14,550) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:15,536) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:15,537) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:23:20,538) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:22,542) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:22,544) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:23:27,546) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:28,526) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:28,526) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:23:33,527) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:34,407) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:34,408) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:23:39,409) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:40,412) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:40,412) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:23:45,414) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:46,358) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:46,358) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:23:51,359) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:52,237) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:52,237) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:23:57,238) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:58,127) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:23:58,127) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:24:03,129) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:04,048) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:04,049) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:24:09,050) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:10,046) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:10,048) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:24:15,049) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:16,495) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:16,495) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:24:21,496) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:22,480) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:22,481) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:24:27,481) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:28,594) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:28,595) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:24:33,595) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:34,493) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:34,493) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:24:39,494) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:40,562) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:40,563) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:24:45,564) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:46,721) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:46,721) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:24:51,721) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:52,808) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:52,809) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:24:57,810) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:58,705) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:24:58,705) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:25:03,706) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:25:04,607) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:25:04,608) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:25:09,609) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:25:10,481) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:25:10,482) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:25:15,482) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:25:16,472) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:25:16,473) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:25:21,473) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549464786043371520]; geocode: [None])
+(2022-07-19 23:25:23,662) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:23,663) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:25:28,663) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:29,559) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:29,561) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:25:34,562) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:35,445) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:35,445) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:25:40,446) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:41,330) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:41,330) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:25:46,331) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:47,212) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:47,212) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:25:52,213) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:53,104) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:53,104) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:25:58,105) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:58,970) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:25:58,970) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:26:03,971) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:04,848) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:04,850) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:26:09,851) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:10,730) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:10,731) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:26:15,733) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:16,622) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:16,623) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:26:21,624) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:22,511) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:22,512) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:26:27,514) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:28,409) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:28,410) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:26:33,410) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:34,296) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:34,298) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:26:39,298) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:40,190) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:40,190) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:26:45,191) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:46,111) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:46,111) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:26:51,112) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:51,986) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:51,987) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:26:56,988) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:57,874) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:26:57,875) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:27:02,876) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:03,790) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:03,790) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:27:08,791) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:09,695) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:09,695) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:27:14,697) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:15,584) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:15,584) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:27:20,585) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:21,555) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:21,556) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:27:26,557) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:27,469) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:27,470) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:27:32,471) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:33,390) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:33,390) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:27:38,391) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:39,265) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:39,266) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:27:44,267) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:45,143) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:45,144) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:27:50,144) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:51,112) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:51,112) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:27:56,113) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:56,995) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:27:56,995) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:28:01,996) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:02,897) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:02,897) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:28:07,898) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:08,763) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:08,763) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:28:13,764) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:14,731) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:14,731) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:28:19,732) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:20,636) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:20,636) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:28:25,637) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:26,743) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:26,744) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:28:31,744) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:32,616) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:32,616) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:28:37,617) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:38,509) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:38,509) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:28:43,510) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:44,382) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:44,383) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:28:49,384) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:50,284) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:50,285) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:28:55,285) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:56,193) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:28:56,194) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:29:01,194) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:02,067) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:02,067) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:29:07,068) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:07,959) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:07,959) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:29:12,960) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:13,848) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:13,848) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:29:18,849) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:19,735) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:19,735) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:29:24,736) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:25,619) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:25,619) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:29:30,620) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:31,551) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:31,552) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:29:36,552) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:37,448) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:37,449) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:29:42,450) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:43,332) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:43,333) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:29:48,334) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:49,219) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:49,219) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:29:54,220) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:55,099) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:29:55,100) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:30:00,101) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:30:01,018) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:30:01,019) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:30:06,019) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:30:06,897) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:30:06,898) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:30:11,899) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:30:12,776) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:30:12,776) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:30:17,777) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:30:18,654) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:30:18,655) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:30:23,657) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549467935982354432]; geocode: [None])
+(2022-07-19 23:30:25,912) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469154129870854]; geocode: [None])
+(2022-07-19 23:30:25,913) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:30:30,914) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469154129870854]; geocode: [None])
+(2022-07-19 23:30:31,834) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469154129870854]; geocode: [None])
+(2022-07-19 23:30:31,834) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:30:36,836) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469154129870854]; geocode: [None])
+(2022-07-19 23:30:37,723) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469154129870854]; geocode: [None])
+(2022-07-19 23:30:37,723) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:30:42,724) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469154129870854]; geocode: [None])
+(2022-07-19 23:30:43,590) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469154129870854]; geocode: [None])
+(2022-07-19 23:30:43,591) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:30:48,592) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469154129870854]; geocode: [None])
+(2022-07-19 23:30:49,453) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469154129870854]; geocode: [None])
+(2022-07-19 23:30:49,458) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:30:54,460) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469154129870854]; geocode: [None])
+(2022-07-19 23:30:56,677) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:30:56,677) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:31:01,678) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:02,571) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:02,571) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:31:07,572) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:08,443) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:08,444) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:31:13,445) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:14,336) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:14,336) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:31:19,338) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:20,263) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:20,264) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:31:25,265) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:26,149) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:26,149) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:31:31,151) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:32,014) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:32,015) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:31:37,016) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:37,907) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:37,907) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:31:42,908) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:43,809) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:43,810) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:31:48,811) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:49,702) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:49,703) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:31:54,703) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:55,571) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:31:55,571) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:32:00,573) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:32:01,558) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:32:01,558) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:32:06,559) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:32:07,436) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:32:07,437) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:32:12,438) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:32:13,315) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:32:13,315) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:32:18,316) [13400] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:32:22,273) [13400] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:32:22,274) [13400] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:32:23,761) [13400] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 23:33:16,414) [17832] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:33:16,419) [17832] INFO: REQUEST -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [0]; geocode: [None])
+(2022-07-19 23:34:09,967) [17832] INFO: COMPLETED -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:34:09,968) [17832] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:34:14,969) [17832] INFO: REQUEST -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:34:17,266) [17832] INFO: COMPLETED -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [1549469975760347137]; geocode: [None])
+(2022-07-19 23:34:17,266) [17832] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:34:22,267) [17832] INFO: REQUEST -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [1549469975760347137]; geocode: [None])
+(2022-07-19 23:34:23,272) [17832] INFO: COMPLETED -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [1549469975760347137]; geocode: [None])
+(2022-07-19 23:34:23,273) [17832] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:34:28,275) [17832] INFO: REQUEST -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [1549469975760347137]; geocode: [None])
+(2022-07-19 23:34:29,141) [17832] INFO: COMPLETED -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [1549469975760347137]; geocode: [None])
+(2022-07-19 23:34:29,141) [17832] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:34:34,142) [17832] INFO: REQUEST -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [1549469975760347137]; geocode: [None])
+(2022-07-19 23:34:35,124) [17832] INFO: COMPLETED -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [1549469975760347137]; geocode: [None])
+(2022-07-19 23:34:35,125) [17832] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:34:40,126) [17832] INFO: REQUEST -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [1549469975760347137]; geocode: [None])
+(2022-07-19 23:34:41,040) [17832] INFO: COMPLETED -> (md5(querystring): [a7b2fd34ac99f5213434b1ad419df221]; since_id: [1549469975760347137]; geocode: [None])
+(2022-07-19 23:34:41,041) [17832] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:34:43,172) [17832] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 23:38:27,777) [5544] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:38:27,785) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549469302159560708]; geocode: [None])
+(2022-07-19 23:38:30,177) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:38:30,178) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:38:35,178) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:38:36,138) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:38:36,138) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:38:41,140) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:38:42,074) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:38:42,074) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:38:47,075) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:38:48,094) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:38:48,094) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:38:53,095) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:38:54,090) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:38:54,090) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:38:59,091) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:39:00,015) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:39:00,016) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:39:05,016) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:39:05,928) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:39:05,929) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:39:10,930) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549470933571801088]; geocode: [None])
+(2022-07-19 23:39:13,107) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549471426033471489]; geocode: [None])
+(2022-07-19 23:39:13,108) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:39:18,109) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549471426033471489]; geocode: [None])
+(2022-07-19 23:39:19,004) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549471426033471489]; geocode: [None])
+(2022-07-19 23:39:19,005) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:39:24,006) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549471426033471489]; geocode: [None])
+(2022-07-19 23:39:25,189) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549471426033471489]; geocode: [None])
+(2022-07-19 23:39:25,189) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:39:30,190) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549471426033471489]; geocode: [None])
+(2022-07-19 23:39:32,416) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549471498662023168]; geocode: [None])
+(2022-07-19 23:39:32,416) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:39:37,417) [5544] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549471498662023168]; geocode: [None])
+(2022-07-19 23:39:38,868) [5544] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549471498662023168]; geocode: [None])
+(2022-07-19 23:39:38,869) [5544] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:39:40,183) [5544] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 23:48:06,052) [23012] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:48:06,054) [23012] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [0]; geocode: [None])
+(2022-07-19 23:49:06,130) [23012] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549472764171542528]; geocode: [None])
+(2022-07-19 23:49:06,130) [23012] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:49:11,131) [23012] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549472764171542528]; geocode: [None])
+(2022-07-19 23:49:13,337) [23012] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:13,338) [23012] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:49:18,338) [23012] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:19,217) [23012] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:19,218) [23012] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:49:24,219) [23012] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:25,105) [23012] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:25,105) [23012] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:49:30,106) [23012] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:31,027) [23012] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:31,027) [23012] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:49:36,028) [23012] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:36,890) [23012] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:36,891) [23012] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:49:41,892) [23012] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:42,794) [23012] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:42,795) [23012] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:49:47,796) [23012] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:48,702) [23012] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:48,704) [23012] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:49:53,705) [23012] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:54,583) [23012] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:49:54,584) [23012] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:49:59,584) [23012] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-19 23:50:00,507) [23012] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 23:52:56,033) [26808] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:52:56,044) [26808] ERROR: Expecting value: line 22 column 7 (char 464)
+(2022-07-19 23:52:56,075) [26808] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 37, in collect_tweets_by_search_terms
+    search_configs = json.load(search_configs_rf)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 22 column 7 (char 464)
+
+(2022-07-19 23:53:18,098) [5512] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:53:18,099) [5512] ERROR: Expecting value: line 22 column 7 (char 464)
+(2022-07-19 23:53:18,100) [5512] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 37, in collect_tweets_by_search_terms
+    search_configs = json.load(search_configs_rf)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 22 column 7 (char 464)
+
+(2022-07-19 23:54:49,694) [1420] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:54:49,700) [1420] ERROR: Expecting value: line 22 column 7 (char 464)
+(2022-07-19 23:54:49,701) [1420] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\NLP\Mid Project\tweetf0rm-master\twitter_tracker.py", line 37, in collect_tweets_by_search_terms
+    search_configs = json.load(search_configs_rf)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 22 column 7 (char 464)
+
+(2022-07-19 23:55:26,946) [20900] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:55:26,951) [20900] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [0]; geocode: [None])
+(2022-07-19 23:56:19,184) [20900] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549474831170666499]; geocode: [None])
+(2022-07-19 23:56:19,186) [20900] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:56:24,186) [20900] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549474831170666499]; geocode: [None])
+(2022-07-19 23:56:25,105) [20900] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549474831170666499]; geocode: [None])
+(2022-07-19 23:56:25,105) [20900] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:56:30,106) [20900] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549474831170666499]; geocode: [None])
+(2022-07-19 23:56:31,009) [20900] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549474831170666499]; geocode: [None])
+(2022-07-19 23:56:31,009) [20900] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:56:36,011) [20900] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549474831170666499]; geocode: [None])
+(2022-07-19 23:56:36,901) [20900] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549474831170666499]; geocode: [None])
+(2022-07-19 23:56:36,902) [20900] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:56:41,903) [20900] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549474831170666499]; geocode: [None])
+(2022-07-19 23:56:50,497) [20900] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549474831170666499]; geocode: [None])
+(2022-07-19 23:56:50,498) [20900] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:56:54,568) [20900] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-19 23:57:35,613) [17096] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-19 23:57:35,618) [17096] INFO: REQUEST -> (md5(querystring): [04b5abc4587191d9397f95123b775a70]; since_id: [0]; geocode: [None])
+(2022-07-19 23:57:43,077) [17096] INFO: COMPLETED -> (md5(querystring): [04b5abc4587191d9397f95123b775a70]; since_id: [1549460524743757826]; geocode: [None])
+(2022-07-19 23:57:43,078) [17096] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:57:48,079) [17096] INFO: REQUEST -> (md5(querystring): [04b5abc4587191d9397f95123b775a70]; since_id: [1549460524743757826]; geocode: [None])
+(2022-07-19 23:57:48,935) [17096] INFO: COMPLETED -> (md5(querystring): [04b5abc4587191d9397f95123b775a70]; since_id: [1549460524743757826]; geocode: [None])
+(2022-07-19 23:57:48,936) [17096] INFO: PAUSE 5s to CONTINUE...
+(2022-07-19 23:57:51,398) [17096] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-20 01:16:16,274) [14828] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-20 01:16:16,288) [14828] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549473761895792649]; geocode: [None])
+(2022-07-20 01:16:19,031) [14828] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549494971648167938]; geocode: [None])
+(2022-07-20 01:16:19,031) [14828] INFO: PAUSE 5s to CONTINUE...
+(2022-07-20 01:16:24,032) [14828] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549494971648167938]; geocode: [None])
+(2022-07-20 01:16:25,056) [14828] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549494971648167938]; geocode: [None])
+(2022-07-20 01:16:25,056) [14828] INFO: PAUSE 5s to CONTINUE...
+(2022-07-20 01:16:30,058) [14828] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549494971648167938]; geocode: [None])
+(2022-07-20 01:16:31,165) [14828] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549494971648167938]; geocode: [None])
+(2022-07-20 01:16:31,165) [14828] INFO: PAUSE 5s to CONTINUE...
+(2022-07-20 01:16:36,166) [14828] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549494971648167938]; geocode: [None])
+(2022-07-20 01:16:37,203) [14828] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549494971648167938]; geocode: [None])
+(2022-07-20 01:16:37,204) [14828] INFO: PAUSE 5s to CONTINUE...
+(2022-07-20 01:16:42,205) [14828] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549494971648167938]; geocode: [None])
+(2022-07-20 01:16:43,234) [14828] INFO: COMPLETED -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549494971648167938]; geocode: [None])
+(2022-07-20 01:16:43,235) [14828] INFO: PAUSE 5s to CONTINUE...
+(2022-07-20 01:16:48,236) [14828] INFO: REQUEST -> (md5(querystring): [ef5429fb34b18a2ebe0e7b7075b057a9]; since_id: [1549494971648167938]; geocode: [None])
+(2022-07-20 01:16:48,743) [14828] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-20 01:21:09,861) [13248] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-20 01:21:09,869) [13248] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549474831170666499]; geocode: [None])
+(2022-07-20 01:21:12,359) [13248] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549496143243083779]; geocode: [None])
+(2022-07-20 01:21:12,360) [13248] INFO: PAUSE 5s to CONTINUE...
+(2022-07-20 01:21:17,361) [13248] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549496143243083779]; geocode: [None])
+(2022-07-20 01:21:31,290) [13248] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1549496143243083779]; geocode: [None])
+(2022-07-20 01:21:31,290) [13248] INFO: PAUSE 5s to CONTINUE...
+(2022-07-20 01:21:32,727) [13248] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-07-20 01:21:41,591) [23920] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-07-20 01:21:41,598) [23920] INFO: REQUEST -> (md5(querystring): [04b5abc4587191d9397f95123b775a70]; since_id: [1549460524743757826]; geocode: [None])
+(2022-07-20 01:21:44,044) [23920] INFO: COMPLETED -> (md5(querystring): [04b5abc4587191d9397f95123b775a70]; since_id: [1549495686755979271]; geocode: [None])
+(2022-07-20 01:21:44,044) [23920] INFO: PAUSE 5s to CONTINUE...
+(2022-07-20 01:21:46,064) [23920] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-16 18:54:47,647) [24920] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 18:54:47,651) [24920] ERROR: Expecting value: line 21 column 7 (char 436)
+(2022-09-16 18:54:47,692) [24920] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 37, in collect_tweets_by_search_terms
+    search_configs = json.load(search_configs_rf)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 21 column 7 (char 436)
+
+(2022-09-16 18:55:41,333) [20988] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 18:55:41,334) [20988] ERROR: Expecting value: line 21 column 7 (char 436)
+(2022-09-16 18:55:41,336) [20988] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 37, in collect_tweets_by_search_terms
+    search_configs = json.load(search_configs_rf)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 21 column 7 (char 436)
+
+(2022-09-16 18:58:10,497) [17632] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 18:58:10,499) [17632] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 18:58:42,072) [17632] ERROR: Unable to obtain OAuth 2 access token.
+(2022-09-16 18:58:42,139) [17632] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-09-16 18:58:42,142) [17632] INFO: COMPLETED -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 18:58:42,144) [17632] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 18:58:47,147) [17632] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:01:00,659) [4340] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:01:00,663) [4340] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:01:28,078) [4340] ERROR: Unable to obtain OAuth 2 access token.
+(2022-09-16 19:01:28,082) [4340] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-09-16 19:01:28,084) [4340] INFO: COMPLETED -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:01:28,085) [4340] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:01:33,085) [4340] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:03:14,113) [1788] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:03:14,115) [1788] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:03:34,981) [1788] ERROR: Unable to obtain OAuth 2 access token.
+(2022-09-16 19:03:34,985) [1788] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-09-16 19:03:34,987) [1788] INFO: COMPLETED -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:03:34,988) [1788] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:03:39,988) [1788] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:07:20,521) [19384] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:07:20,522) [19384] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:07:48,131) [19384] ERROR: Unable to obtain OAuth 2 access token.
+(2022-09-16 19:07:48,135) [19384] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-09-16 19:07:48,137) [19384] INFO: COMPLETED -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:07:48,137) [19384] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:07:53,138) [19384] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:08:12,779) [19384] ERROR: Unable to obtain OAuth 2 access token.
+(2022-09-16 19:08:12,780) [19384] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-09-16 19:08:12,785) [19384] INFO: COMPLETED -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:08:12,785) [19384] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:08:17,786) [19384] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:10:20,923) [1904] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:10:20,925) [1904] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [0]; geocode: [None])
+(2022-09-16 19:10:48,928) [1904] ERROR: Unable to obtain OAuth 2 access token.
+(2022-09-16 19:10:48,932) [1904] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-09-16 19:10:48,935) [1904] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [0]; geocode: [None])
+(2022-09-16 19:10:48,935) [1904] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:10:53,937) [1904] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [0]; geocode: [None])
+(2022-09-16 19:11:13,254) [1904] ERROR: Unable to obtain OAuth 2 access token.
+(2022-09-16 19:11:13,256) [1904] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-09-16 19:11:13,261) [1904] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [0]; geocode: [None])
+(2022-09-16 19:11:13,261) [1904] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:11:18,263) [1904] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [0]; geocode: [None])
+(2022-09-16 19:11:46,185) [1904] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-16 19:12:30,150) [5200] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:12:30,151) [5200] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:12:49,474) [5200] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-16 19:15:12,123) [10944] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:15:12,124) [10944] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:15:33,856) [10944] ERROR: Unable to obtain OAuth 2 access token.
+(2022-09-16 19:15:33,860) [10944] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-09-16 19:15:33,862) [10944] INFO: COMPLETED -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:15:33,862) [10944] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:15:38,863) [10944] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:17:45,593) [23448] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:17:45,594) [23448] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:18:04,919) [23448] ERROR: Unable to obtain OAuth 2 access token.
+(2022-09-16 19:18:04,928) [23448] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 329, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 52, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-09-16 19:18:04,934) [23448] INFO: COMPLETED -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:18:04,938) [23448] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:18:09,940) [23448] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:18:26,848) [18860] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:18:26,849) [18860] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:18:54,587) [18860] ERROR: Unable to obtain OAuth 2 access token.
+(2022-09-16 19:18:54,591) [18860] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 330, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 53, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-09-16 19:18:54,593) [18860] INFO: COMPLETED -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:18:54,593) [18860] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:18:59,594) [18860] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:23:42,011) [6548] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:23:42,012) [6548] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:24:01,593) [6548] ERROR: Unable to obtain OAuth 2 access token.
+(2022-09-16 19:24:01,598) [6548] ERROR: Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 330, in <module>
+    collect_tweets_by_search_terms(args.command_config, output_folder, config)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 419, in obtain_access_token
+    response = self.client.post(self.request_token_url,
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.twitter.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_tracker.py", line 53, in collect_tweets_by_search_terms
+    twitterCralwer = TwitterCrawler(apikeys=apikeys, client_args=CLIENT_ARGS, output_folder = output_folder)
+  File "C:\NLP\Mid Project\tweetf0rm\twitter_crawler.py", line 54, in __init__
+    access_token = twitter.obtain_access_token()
+  File "C:\Users\Mehdi\AppData\Local\Programs\Python\Python310\lib\site-packages\twython\api.py", line 428, in obtain_access_token
+    raise TwythonAuthError('Unable to obtain OAuth 2 access token.')
+twython.exceptions.TwythonAuthError: Unable to obtain OAuth 2 access token.
+
+(2022-09-16 19:24:01,600) [6548] INFO: COMPLETED -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:24:01,601) [6548] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:24:06,601) [6548] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:24:27,234) [6548] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-16 19:34:56,754) [4664] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:34:56,756) [4664] INFO: REQUEST -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [0]; geocode: [None])
+(2022-09-16 19:39:06,333) [4664] INFO: COMPLETED -> (md5(querystring): [e93373fcb499f5b09f224db15703dd85]; since_id: [1570790594515206148]; geocode: [None])
+(2022-09-16 19:39:06,334) [4664] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:39:09,445) [4664] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-16 19:40:25,324) [25864] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:40:25,325) [25864] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [0]; geocode: [None])
+(2022-09-16 19:40:43,263) [25864] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:40:43,264) [25864] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:40:48,264) [25864] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:40:49,835) [25864] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:40:49,837) [25864] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:40:54,837) [25864] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:40:56,358) [25864] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:40:56,359) [25864] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:40:57,942) [25864] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-16 19:42:34,748) [20308] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:42:34,749) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [0]; geocode: [None])
+(2022-09-16 19:42:52,492) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:42:52,492) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:42:57,493) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:42:59,034) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:42:59,034) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:43:04,035) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:05,551) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:05,551) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:43:10,552) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:12,081) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:12,081) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:43:17,081) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:18,608) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:18,608) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:43:23,609) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:25,164) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:25,164) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:43:30,165) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:31,703) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:31,703) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:43:36,704) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:38,266) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:38,267) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:43:43,267) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:44,825) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:44,826) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:43:49,827) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:51,371) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:51,372) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:43:56,373) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:57,914) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:43:57,914) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:44:02,915) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:04,439) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:04,439) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:44:09,440) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:10,974) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:10,975) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:44:15,975) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:17,562) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:17,563) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:44:22,564) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:24,121) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:24,122) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:44:29,122) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:30,718) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:30,718) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:44:35,720) [20308] INFO: REQUEST -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:37,236) [20308] INFO: COMPLETED -> (md5(querystring): [c8a76d755d83214fa4fe62698172a126]; since_id: [1570766199189041154]; geocode: [None])
+(2022-09-16 19:44:37,236) [20308] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:44:40,546) [20308] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-16 19:46:31,866) [4020] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:46:31,866) [4020] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [0]; geocode: [None])
+(2022-09-16 19:46:55,633) [4020] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1570781912276553729]; geocode: [None])
+(2022-09-16 19:46:55,634) [4020] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:47:00,635) [4020] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1570781912276553729]; geocode: [None])
+(2022-09-16 19:47:02,188) [4020] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1570781912276553729]; geocode: [None])
+(2022-09-16 19:47:02,188) [4020] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:47:07,191) [4020] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1570781912276553729]; geocode: [None])
+(2022-09-16 19:47:08,713) [4020] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1570781912276553729]; geocode: [None])
+(2022-09-16 19:47:08,713) [4020] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:47:13,715) [4020] INFO: REQUEST -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1570781912276553729]; geocode: [None])
+(2022-09-16 19:47:15,242) [4020] INFO: COMPLETED -> (md5(querystring): [2b747b9fdee2fb3d07857bce9462b28c]; since_id: [1570781912276553729]; geocode: [None])
+(2022-09-16 19:47:15,243) [4020] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:47:16,019) [4020] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-16 19:47:23,155) [25436] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-16 19:47:23,156) [25436] INFO: REQUEST -> (md5(querystring): [8a291b83ece2b92fdba71583dfe15417]; since_id: [0]; geocode: [None])
+(2022-09-16 19:47:28,328) [25436] INFO: COMPLETED -> (md5(querystring): [8a291b83ece2b92fdba71583dfe15417]; since_id: [1570747142091972610]; geocode: [None])
+(2022-09-16 19:47:28,328) [25436] INFO: PAUSE 5s to CONTINUE...
+(2022-09-16 19:47:33,329) [25436] INFO: REQUEST -> (md5(querystring): [8a291b83ece2b92fdba71583dfe15417]; since_id: [1570747142091972610]; geocode: [None])
+(2022-09-16 19:47:34,074) [25436] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-20 18:17:44,464) [27196] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-20 18:17:44,469) [27196] INFO: REQUEST -> (md5(querystring): [923f64a60b6999fb6c82829b52abf0f9]; since_id: [0]; geocode: [None])
+(2022-09-20 18:19:09,022) [27196] INFO: COMPLETED -> (md5(querystring): [923f64a60b6999fb6c82829b52abf0f9]; since_id: [1572220523488202755]; geocode: [None])
+(2022-09-20 18:19:09,022) [27196] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:19:14,023) [27196] INFO: REQUEST -> (md5(querystring): [923f64a60b6999fb6c82829b52abf0f9]; since_id: [1572220523488202755]; geocode: [None])
+(2022-09-20 18:19:17,154) [27196] INFO: COMPLETED -> (md5(querystring): [923f64a60b6999fb6c82829b52abf0f9]; since_id: [1572221263548121091]; geocode: [None])
+(2022-09-20 18:19:17,154) [27196] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:19:22,156) [27196] INFO: REQUEST -> (md5(querystring): [923f64a60b6999fb6c82829b52abf0f9]; since_id: [1572221263548121091]; geocode: [None])
+(2022-09-20 18:19:25,548) [27196] INFO: COMPLETED -> (md5(querystring): [923f64a60b6999fb6c82829b52abf0f9]; since_id: [1572221365142360066]; geocode: [None])
+(2022-09-20 18:19:25,548) [27196] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:19:30,549) [27196] INFO: REQUEST -> (md5(querystring): [923f64a60b6999fb6c82829b52abf0f9]; since_id: [1572221365142360066]; geocode: [None])
+(2022-09-20 18:19:32,003) [27196] INFO: COMPLETED -> (md5(querystring): [923f64a60b6999fb6c82829b52abf0f9]; since_id: [1572221365142360066]; geocode: [None])
+(2022-09-20 18:19:32,004) [27196] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:19:37,005) [27196] INFO: REQUEST -> (md5(querystring): [923f64a60b6999fb6c82829b52abf0f9]; since_id: [1572221365142360066]; geocode: [None])
+(2022-09-20 18:19:38,433) [27196] INFO: COMPLETED -> (md5(querystring): [923f64a60b6999fb6c82829b52abf0f9]; since_id: [1572221365142360066]; geocode: [None])
+(2022-09-20 18:19:38,434) [27196] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:19:39,450) [27196] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-20 18:19:51,288) [1696] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-20 18:19:51,289) [1696] INFO: REQUEST -> (md5(querystring): [8eb60d60382a360accdfebec841e3554]; since_id: [0]; geocode: [None])
+(2022-09-20 18:20:34,218) [1696] INFO: COMPLETED -> (md5(querystring): [8eb60d60382a360accdfebec841e3554]; since_id: [1572221160338894848]; geocode: [None])
+(2022-09-20 18:20:34,218) [1696] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:20:39,219) [1696] INFO: REQUEST -> (md5(querystring): [8eb60d60382a360accdfebec841e3554]; since_id: [1572221160338894848]; geocode: [None])
+(2022-09-20 18:21:33,802) [1696] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-20 18:23:34,888) [15112] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-20 18:23:34,888) [15112] INFO: REQUEST -> (md5(querystring): [8eb60d60382a360accdfebec841e3554]; since_id: [0]; geocode: [None])
+(2022-09-20 18:24:36,490) [15112] INFO: COMPLETED -> (md5(querystring): [8eb60d60382a360accdfebec841e3554]; since_id: [1572222436979924995]; geocode: [None])
+(2022-09-20 18:24:36,500) [15112] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:24:41,501) [15112] INFO: REQUEST -> (md5(querystring): [8eb60d60382a360accdfebec841e3554]; since_id: [1572222436979924995]; geocode: [None])
+(2022-09-20 18:24:44,361) [15112] INFO: COMPLETED -> (md5(querystring): [8eb60d60382a360accdfebec841e3554]; since_id: [1572222609877782528]; geocode: [None])
+(2022-09-20 18:24:44,362) [15112] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:24:49,363) [15112] INFO: REQUEST -> (md5(querystring): [8eb60d60382a360accdfebec841e3554]; since_id: [1572222609877782528]; geocode: [None])
+(2022-09-20 18:24:51,214) [15112] INFO: COMPLETED -> (md5(querystring): [8eb60d60382a360accdfebec841e3554]; since_id: [1572222609877782528]; geocode: [None])
+(2022-09-20 18:24:51,214) [15112] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:24:56,216) [15112] INFO: REQUEST -> (md5(querystring): [8eb60d60382a360accdfebec841e3554]; since_id: [1572222609877782528]; geocode: [None])
+(2022-09-20 18:24:57,725) [15112] INFO: COMPLETED -> (md5(querystring): [8eb60d60382a360accdfebec841e3554]; since_id: [1572222609877782528]; geocode: [None])
+(2022-09-20 18:24:57,726) [15112] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:25:00,105) [15112] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...
+(2022-09-20 18:25:07,301) [8512] INFO: 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+(2022-09-20 18:25:07,302) [8512] INFO: REQUEST -> (md5(querystring): [c6e1ba621f92e9e946a338eb3ab28fe9]; since_id: [0]; geocode: [None])
+(2022-09-20 18:25:17,303) [8512] INFO: COMPLETED -> (md5(querystring): [c6e1ba621f92e9e946a338eb3ab28fe9]; since_id: [1572222804019273728]; geocode: [None])
+(2022-09-20 18:25:17,304) [8512] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:25:22,305) [8512] INFO: REQUEST -> (md5(querystring): [c6e1ba621f92e9e946a338eb3ab28fe9]; since_id: [1572222804019273728]; geocode: [None])
+(2022-09-20 18:25:23,806) [8512] INFO: COMPLETED -> (md5(querystring): [c6e1ba621f92e9e946a338eb3ab28fe9]; since_id: [1572222804019273728]; geocode: [None])
+(2022-09-20 18:25:23,807) [8512] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:25:28,807) [8512] INFO: REQUEST -> (md5(querystring): [c6e1ba621f92e9e946a338eb3ab28fe9]; since_id: [1572222804019273728]; geocode: [None])
+(2022-09-20 18:25:30,287) [8512] INFO: COMPLETED -> (md5(querystring): [c6e1ba621f92e9e946a338eb3ab28fe9]; since_id: [1572222804019273728]; geocode: [None])
+(2022-09-20 18:25:30,287) [8512] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:25:35,288) [8512] INFO: REQUEST -> (md5(querystring): [c6e1ba621f92e9e946a338eb3ab28fe9]; since_id: [1572222804019273728]; geocode: [None])
+(2022-09-20 18:25:36,753) [8512] INFO: COMPLETED -> (md5(querystring): [c6e1ba621f92e9e946a338eb3ab28fe9]; since_id: [1572222804019273728]; geocode: [None])
+(2022-09-20 18:25:36,754) [8512] INFO: PAUSE 5s to CONTINUE...
+(2022-09-20 18:25:37,847) [8512] ERROR: You pressed Ctrl+C! SO I JUST Killed myself...

@@ -1,0 +1,28 @@
+
+@font-face {
+  font-family: 'BHoma';
+  src: url('font\BHoma.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  /* font-display: swap; */
+}
+
+div.temp {
+  background-color: #100f0f;
+  border: 2px solid #e40872;
+  padding: 5% 5% 5% 10%;
+  margin: 20px;
+  border-radius: 5px;
+
+  unicode-bidi:bidi-override;
+  direction: RTL;
+  text-align: right;
+
+  font-family: 'BHoma';
+  font-size: 20px;  
+}
+
+code {
+  font-size: large;
+  color: #e40872;
+}

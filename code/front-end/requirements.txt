@@ -1,0 +1,3 @@
+ftfy
+streamlit==1.12.2
+plotly==5.10.0
